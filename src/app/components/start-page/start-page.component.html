@@ -1,1 +1,13 @@
-<p>start-page works!</p>
+<div class="h-[100vh] w-full  flex justify-center items-center flex-col transition-all ease-in-out duration-1000"
+    [ngClass]="{'opacity-100': !hiddenBall, 'opacity-0': hiddenBall}">
+    <div id="appear-ball" class="bg-white flex items-center justify-center min-h-80 min-w-80 rounded-full shadow-lg shadow-color5">
+        <h1 class="font-extralight text-6xl text-color5">Your<span class=" text-color2  " [ngClass]="{}">Style
+            </span></h1>
+    </div>
+    <button 
+        (click)="goShopping()"
+        class="transition-all ease-in-out duration-1000 px-2 py-2 mt-10 bg-gradient-to-r from-color5 to-color2 rounded-md shadow-lg shadow-color5 text-lg font-extralight text-white" 
+        [ngClass]="{'opacity-100': !hiddenButton, 'opacity-0': hiddenButton}">
+        Let`s go shopping
+    </button>
+</div>

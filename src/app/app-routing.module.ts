@@ -5,10 +5,10 @@ import { MainComponent } from './components/main/main.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
-  {path:'beginPage', component:StartPageComponent},
+  {path:'start-page', component:StartPageComponent},
   {path:'main', component:MainComponent},
   {path:'not-found', component:NotFoundComponent},
-  {path:'', redirectTo:'beginPage', pathMatch:'full'},
+  {path:'', redirectTo:'start-page', pathMatch:'full'},
   {path:'**', redirectTo:'not-found', pathMatch:'full'}
 
 ];
