@@ -5,7 +5,15 @@ router.get("/", (req, res, next) => {
   res.status(200).json({ message: "get request trough /products" });
 });
 router.post("/", (req, res, next) => {
-  res.status(200).json({ message: "post request trough /products" });
+  const product = {
+    name: req.body.name,
+    price: req.body.price
+  }
+  res.status(200).json(
+    // message: 'Here is your POST request',
+  product
+  )
+  // res.status(200).json({ message: "post request trough /products" });
 });
 
 router.get("/:productId", (req, res, next) => {
